@@ -13,7 +13,7 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Задание Flat">
+    <Filter Include="Задание Apartment">
       <UniqueIdentifier>{fcb86527-4f81-42c9-b47b-3106319561cb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -23,8 +23,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Задание FLAT\Задание.txt">
-      <Filter>Задание Flat</Filter>
+    <Text Include="Задание Apartment\Задание.txt">
+      <Filter>Задание Apartment</Filter>
     </Text>
   </ItemGroup>
 </Project>
