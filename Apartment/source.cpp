@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <Windows.h>
 #include <string>
 #include <sstream>
@@ -6,20 +6,20 @@
 using namespace std;
 
 struct Apartment {
-	int m_AmountOfRooms{ 0 }; // Количество комнат
-	double m_Meterage{ 0 };	 // Метраж
-	int m_NumberOfApartment{ 0 }; // Номер кватриты
-	int m_AmountOfResidents{ 0 }; // Количество жильцов
-	bool m_Balcony{ false }; // Наличие Балкона
+	int m_AmountOfRooms{ 0 }; // РљРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРјРЅР°С‚
+	double m_Meterage{ 0 };	 // РњРµС‚СЂР°Р¶
+	int m_NumberOfApartment{ 0 }; // РќРѕРјРµСЂ РєРІР°С‚СЂРёС‚С‹
+	int m_AmountOfResidents{ 0 }; // РљРѕР»РёС‡РµСЃС‚РІРѕ Р¶РёР»СЊС†РѕРІ
+	bool m_Balcony{ false }; // РќР°Р»РёС‡РёРµ Р‘Р°Р»РєРѕРЅР°
 
-	// setter - устанавливает значение приватных переменных
+	// setter - СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ Р·РЅР°С‡РµРЅРёРµ РїСЂРёРІР°С‚РЅС‹С… РїРµСЂРµРјРµРЅРЅС‹С…
 	void AmountOfRooms(int value) { m_AmountOfRooms = value; } 
 	void Meterage(double value) { m_Meterage = value; }
 	void NumberOfApartment(int value) { m_NumberOfApartment = value; }
 	void AmountOfResidents(int value) { m_AmountOfResidents = value; }
 	void Balcony(bool value) { m_Balcony = value; }
 
-	// getter - возвращает его приватных переменных
+	// getter - РІРѕР·РІСЂР°С‰Р°РµС‚ РµРіРѕ РїСЂРёРІР°С‚РЅС‹С… РїРµСЂРµРјРµРЅРЅС‹С…
 	int AmountOfRooms() const { return m_AmountOfRooms; } 
 	double Meterage() const { return m_Meterage; }
 	int NumberOfApartment() const { return m_NumberOfApartment; }
@@ -27,11 +27,11 @@ struct Apartment {
 	bool Balcony() const { return m_Balcony; }
 
 	string GetApartmenttString() const {
-		return "Количество комнат: " + to_string(AmountOfRooms()) +
-			" | Метраж: " + ValueString(Meterage()) +
-			" кв.м | Номер квартиры: " + to_string(NumberOfApartment()) +
-			" | Количество жильцов: " + to_string(AmountOfResidents()) +
-			" | Наличие балкона: " + (Balcony() ? "Да" : "Нет");
+		return "РљРѕР»РёС‡РµСЃС‚РІРѕ РєРѕРјРЅР°С‚: " + to_string(AmountOfRooms()) +
+			" | РњРµС‚СЂР°Р¶: " + ValueString(Meterage()) +
+			" РєРІ.Рј | РќРѕРјРµСЂ РєРІР°СЂС‚РёСЂС‹: " + to_string(NumberOfApartment()) +
+			" | РљРѕР»РёС‡РµСЃС‚РІРѕ Р¶РёР»СЊС†РѕРІ: " + to_string(AmountOfResidents()) +
+			" | РќР°Р»РёС‡РёРµ Р±Р°Р»РєРѕРЅР°: " + (Balcony() ? "Р”Р°" : "РќРµС‚");
 	}
 
 	string ValueString(double value) const {
